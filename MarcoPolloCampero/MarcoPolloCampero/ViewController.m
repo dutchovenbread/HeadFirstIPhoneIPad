@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *tweetTextView;
 
 @end
 
@@ -25,6 +26,6 @@
 }
 
 - (IBAction)postItButtonPressed:(id)sender {
-    NSLog(@"Post It button was pressed!");
+    NSLog(@"Post It button was pressed: %@", self.tweetTextView.text);
 }
 @end
