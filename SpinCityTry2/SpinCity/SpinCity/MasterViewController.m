@@ -8,9 +8,12 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "AlbumDataController.h"
+#import "Album.h"
+
 
 @interface MasterViewController ()
-
+@property (nonatomic,strong) AlbumDataController *albumDataController;
 @property NSMutableArray *objects;
 @end
 
@@ -18,6 +21,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.albumDataController = [[AlbumDataController alloc] init];
 }
 
 - (void)viewDidLoad {
