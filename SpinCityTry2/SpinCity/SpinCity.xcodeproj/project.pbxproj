@@ -15,6 +15,7 @@
 		9E5FD9231A7E8E3300F405F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5FD9221A7E8E3300F405F1 /* Images.xcassets */; };
 		9E5FD9261A7E8E3300F405F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5FD9241A7E8E3300F405F1 /* LaunchScreen.xib */; };
 		9E5FD9321A7E8E3300F405F1 /* SpinCityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5FD9311A7E8E3300F405F1 /* SpinCityTests.m */; };
+		9E5FD93D1A7E94D900F405F1 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5FD93C1A7E94D900F405F1 /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		9E5FD92B1A7E8E3300F405F1 /* SpinCityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinCityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5FD9301A7E8E3300F405F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E5FD9311A7E8E3300F405F1 /* SpinCityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpinCityTests.m; sourceTree = "<group>"; };
+		9E5FD93B1A7E94D900F405F1 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		9E5FD93C1A7E94D900F405F1 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				9E5FD9221A7E8E3300F405F1 /* Images.xcassets */,
 				9E5FD9241A7E8E3300F405F1 /* LaunchScreen.xib */,
 				9E5FD9121A7E8E3300F405F1 /* Supporting Files */,
+				9E5FD93B1A7E94D900F405F1 /* Album.h */,
+				9E5FD93C1A7E94D900F405F1 /* Album.m */,
 			);
 			path = SpinCity;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				9E5FD9181A7E8E3300F405F1 /* AppDelegate.m in Sources */,
 				9E5FD91B1A7E8E3300F405F1 /* MasterViewController.m in Sources */,
 				9E5FD9151A7E8E3300F405F1 /* main.m in Sources */,
+				9E5FD93D1A7E94D900F405F1 /* Album.m in Sources */,
 				9E5FD91E1A7E8E3300F405F1 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
