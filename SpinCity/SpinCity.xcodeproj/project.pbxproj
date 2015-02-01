@@ -15,6 +15,9 @@
 		9E3A45411A7B3283001F3F8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3A45401A7B3283001F3F8B /* Images.xcassets */; };
 		9E3A45441A7B3283001F3F8B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E3A45421A7B3283001F3F8B /* LaunchScreen.xib */; };
 		9E3A45501A7B3283001F3F8B /* SpinCityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A454F1A7B3283001F3F8B /* SpinCityTests.m */; };
+		9E3A455B1A7B3705001F3F8B /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A455A1A7B3705001F3F8B /* Album.m */; };
+		9E3A455E1A7B3B4B001F3F8B /* AlbumDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A455D1A7B3B4B001F3F8B /* AlbumDataController.m */; };
+		9E3A45611A7E65EC001F3F8B /* AlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3A45601A7E65EC001F3F8B /* AlbumTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,12 @@
 		9E3A45491A7B3283001F3F8B /* SpinCityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinCityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3A454E1A7B3283001F3F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3A454F1A7B3283001F3F8B /* SpinCityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpinCityTests.m; sourceTree = "<group>"; };
+		9E3A45591A7B3705001F3F8B /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		9E3A455A1A7B3705001F3F8B /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		9E3A455C1A7B3B4B001F3F8B /* AlbumDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDataController.h; sourceTree = "<group>"; };
+		9E3A455D1A7B3B4B001F3F8B /* AlbumDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDataController.m; sourceTree = "<group>"; };
+		9E3A455F1A7E65EC001F3F8B /* AlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableViewCell.h; sourceTree = "<group>"; };
+		9E3A45601A7E65EC001F3F8B /* AlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,12 @@
 				9E3A45401A7B3283001F3F8B /* Images.xcassets */,
 				9E3A45421A7B3283001F3F8B /* LaunchScreen.xib */,
 				9E3A45301A7B3283001F3F8B /* Supporting Files */,
+				9E3A45591A7B3705001F3F8B /* Album.h */,
+				9E3A455A1A7B3705001F3F8B /* Album.m */,
+				9E3A455C1A7B3B4B001F3F8B /* AlbumDataController.h */,
+				9E3A455D1A7B3B4B001F3F8B /* AlbumDataController.m */,
+				9E3A455F1A7E65EC001F3F8B /* AlbumTableViewCell.h */,
+				9E3A45601A7E65EC001F3F8B /* AlbumTableViewCell.m */,
 			);
 			path = SpinCity;
 			sourceTree = "<group>";
@@ -225,8 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E3A45361A7B3283001F3F8B /* AppDelegate.m in Sources */,
+				9E3A455E1A7B3B4B001F3F8B /* AlbumDataController.m in Sources */,
 				9E3A45391A7B3283001F3F8B /* MasterViewController.m in Sources */,
 				9E3A45331A7B3283001F3F8B /* main.m in Sources */,
+				9E3A45611A7E65EC001F3F8B /* AlbumTableViewCell.m in Sources */,
+				9E3A455B1A7B3705001F3F8B /* Album.m in Sources */,
 				9E3A453C1A7B3283001F3F8B /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,22 +5,18 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>ECC8D333-9026-4E06-BC89-9D6949F48958</string>
+	<string>3055053E-4465-4BF4-88F5-B3E46BEE658F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>MarcoPolloCampero</string>
+	<string>SpinCity</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>530B35B2B8BA83459A25246D9B299224331B7941</key>
-		<string>https://github.com/dutchovenbread/Head-First-iPhone-iPad-Development-3rd-Edition</string>
 		<key>D169AC69F4D24AA139DC46E1BA914FC89A359450</key>
 		<string>https://github.com/dutchovenbread/HeadFirstIPhoneIPad.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MarcoPolloCampero/MarcoPolloCampero.xcodeproj</string>
+	<string>SpinCity/SpinCity.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>530B35B2B8BA83459A25246D9B299224331B7941</key>
-		<string>../../../../HFiPiPDevMKH</string>
 		<key>D169AC69F4D24AA139DC46E1BA914FC89A359450</key>
 		<string>../../..</string>
 	</dict>
@@ -32,14 +28,6 @@
 	<string>D169AC69F4D24AA139DC46E1BA914FC89A359450</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>530B35B2B8BA83459A25246D9B299224331B7941</string>
-			<key>IDESourceControlWCCName</key>
-			<string>HFiPiPDevMKH</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

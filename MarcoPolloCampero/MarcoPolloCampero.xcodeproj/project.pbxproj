@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E3A45231A74880F001F3F8B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3A45221A74880F001F3F8B /* Social.framework */; };
 		9E5983FA1A513E6600E40764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5983F91A513E6600E40764 /* main.m */; };
 		9E5983FD1A513E6600E40764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5983FC1A513E6600E40764 /* AppDelegate.m */; };
 		9E5984001A513E6600E40764 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5983FF1A513E6600E40764 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E3A45221A74880F001F3F8B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		9E5983F41A513E6600E40764 /* MarcoPolloCampero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarcoPolloCampero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5983F81A513E6600E40764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E5983F91A513E6600E40764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3A45231A74880F001F3F8B /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		9E5983EB1A513E6600E40764 = {
 			isa = PBXGroup;
 			children = (
+				9E3A45221A74880F001F3F8B /* Social.framework */,
 				9E5983F61A513E6600E40764 /* MarcoPolloCampero */,
 				9E5984101A513E6600E40764 /* MarcoPolloCamperoTests */,
 				9E5983F51A513E6600E40764 /* Products */,
@@ -412,6 +416,7 @@
 				9E5984191A513E6600E40764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E59841A1A513E6600E40764 /* Build configuration list for PBXNativeTarget "MarcoPolloCamperoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				9E59841C1A513E6600E40764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
