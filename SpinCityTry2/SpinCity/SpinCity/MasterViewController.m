@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "AlbumDataController.h"
 #import "Album.h"
+#import "AlbumTableViewCell.h"
 
 
 @interface MasterViewController ()
@@ -69,11 +70,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumCell" forIndexPath:indexPath];
+    AlbumTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumCell" forIndexPath:indexPath];
 
     Album *album = [self.albumDataController albumAtIndex:indexPath.row];
     //NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = album.title;
+    cell.albumTitleLabel.text = album.title;
+    cell.albumSummaryLabel.text = album.summary;
+    cell.priceLabel.text = [NSString stringWithFormat:@"$%01.2f", album.price];
+    //cell.textLabel.text = album.title;
     return cell;
 }
 
