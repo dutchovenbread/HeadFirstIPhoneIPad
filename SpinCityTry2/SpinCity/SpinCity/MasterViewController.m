@@ -64,14 +64,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return [self.albumDataController albumCount];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    Album *album = [self.albumDataController albumAtIndex:indexPath.row];
+    //NSDate *object = self.objects[indexPath.row];
+    cell.textLabel.text = album.title;
     return cell;
 }
 
