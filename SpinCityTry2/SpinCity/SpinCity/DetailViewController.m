@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "Album.h"
 
 @interface DetailViewController ()
 
@@ -26,6 +27,14 @@
 }
 
 - (void)configureView {
+    //Update the user interface for the detail item.
+    if (self.detailItem) {
+        self.albumTitleLabel.text = self.detailItem.title;
+        self.priceLabel.text = [NSString stringWithFormat:@"$%01.2f", self.detailItem.price];
+        self.artistLabel.text = self.detailItem.artist;
+        self.locationLabel.text = self.detailItem.locationInStore;
+        self.descriptionTextView.text = self.detailItem.summary;
+    }
     
 }
 
@@ -39,5 +48,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

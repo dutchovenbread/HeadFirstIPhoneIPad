@@ -10,6 +10,11 @@
 @class Album;
 
 @interface DetailViewController : UITableViewController //UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *albumTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *artistLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 
 @property (strong, nonatomic) Album * detailItem;
 

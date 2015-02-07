@@ -51,7 +51,7 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"showAlbumDetails"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Album *album = [self.albumDataController albumAtIndex:indexPath.row];
         //NSDate *object = self.objects[indexPath.row];
