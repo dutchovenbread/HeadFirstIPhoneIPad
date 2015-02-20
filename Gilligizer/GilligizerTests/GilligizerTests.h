@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Element 84, LLC. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface GilligizerTests : SenTestCase
+@interface GilligizerTests : XCTestCase
 
 @end

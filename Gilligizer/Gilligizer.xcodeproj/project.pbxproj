@@ -21,7 +21,6 @@
 		DA776BEB1725CFDB00F9B4BC /* Gilligizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA776BE91725CFDB00F9B4BC /* Gilligizer.xcdatamodeld */; };
 		DA776BEE1725CFDB00F9B4BC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BED1725CFDB00F9B4BC /* MasterViewController.m */; };
 		DA776BF11725CFDB00F9B4BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA776BF01725CFDB00F9B4BC /* DetailViewController.m */; };
-		DA776BF91725CFDC00F9B4BC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BF81725CFDC00F9B4BC /* SenTestingKit.framework */; };
 		DA776BFA1725CFDC00F9B4BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BCC1725CFDB00F9B4BC /* UIKit.framework */; };
 		DA776BFB1725CFDC00F9B4BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BCE1725CFDB00F9B4BC /* Foundation.framework */; };
 		DA776BFC1725CFDC00F9B4BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA776BD21725CFDB00F9B4BC /* CoreData.framework */; };
@@ -61,8 +60,7 @@
 		DA776BED1725CFDB00F9B4BC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		DA776BEF1725CFDB00F9B4BC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		DA776BF01725CFDB00F9B4BC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		DA776BF71725CFDC00F9B4BC /* GilligizerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GilligizerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA776BF81725CFDC00F9B4BC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DA776BF71725CFDC00F9B4BC /* GilligizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GilligizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA776C011725CFDC00F9B4BC /* GilligizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GilligizerTests-Info.plist"; sourceTree = "<group>"; };
 		DA776C031725CFDC00F9B4BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA776C051725CFDC00F9B4BC /* GilligizerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GilligizerTests.h; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA776BF91725CFDC00F9B4BC /* SenTestingKit.framework in Frameworks */,
 				DA776BFA1725CFDC00F9B4BC /* UIKit.framework in Frameworks */,
 				DA776BFB1725CFDC00F9B4BC /* Foundation.framework in Frameworks */,
 				DA776BFC1725CFDC00F9B4BC /* CoreData.framework in Frameworks */,
@@ -111,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				DA776BC91725CFDB00F9B4BC /* Gilligizer.app */,
-				DA776BF71725CFDC00F9B4BC /* GilligizerTests.octest */,
+				DA776BF71725CFDC00F9B4BC /* GilligizerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +120,6 @@
 				DA776BCE1725CFDB00F9B4BC /* Foundation.framework */,
 				DA776BD01725CFDB00F9B4BC /* CoreGraphics.framework */,
 				DA776BD21725CFDB00F9B4BC /* CoreData.framework */,
-				DA776BF81725CFDC00F9B4BC /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,8 +211,8 @@
 			);
 			name = GilligizerTests;
 			productName = GilligizerTests;
-			productReference = DA776BF71725CFDC00F9B4BC /* GilligizerTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = DA776BF71725CFDC00F9B4BC /* GilligizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,6 +220,7 @@
 		DA776BC11725CFDB00F9B4BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0610;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Element 84, LLC";
 			};
@@ -429,13 +426,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gilligizer/Gilligizer-Prefix.pch";
 				INFOPLIST_FILE = "GilligizerTests/GilligizerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -446,13 +443,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gilligizer/Gilligizer-Prefix.pch";
 				INFOPLIST_FILE = "GilligizerTests/GilligizerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -475,6 +472,7 @@
 				DA776C0C1725CFDC00F9B4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA776C0D1725CFDC00F9B4BC /* Build configuration list for PBXNativeTarget "GilligizerTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +481,7 @@
 				DA776C0F1725CFDC00F9B4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
